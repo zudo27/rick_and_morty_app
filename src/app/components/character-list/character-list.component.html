@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3" *ngFor="let data of characterList">
+      <div class="card custom-card" (click)="viewCharacterDetail(data.id)">
+        <div class="d-flex">
+          <div class="img-container">
+            <img src={{data.image}} class="character-img">
+          </div>
+          <div class="description-container">
+            <h6 class="container-title">{{data?.name}}</h6>
+            <p >{{data?.species}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

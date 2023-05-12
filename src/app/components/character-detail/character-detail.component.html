@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <nav class="navbar navbar-light bg-lightnav justify-content-end">
+    <a class="navbar-brand " routerLink="/">Back to character list</a>
+  </nav>
+      <div class="card">
+          <div class="card-header">
+              {{characterDetail?.name}} Details
+          </div>
+          <div class="card-body shadow details">
+              <div class="row">
+                  <div class="col-3">
+                    <img src={{characterDetail.image}}>
+                  </div>
+                  <div class="col-9 card-text ">
+                    <h1 class="text-white">{{characterDetail?.name}}</h1>
+                    <p class="text-white"><span [ngClass]="{'alive': characterDetail?.status == 'Alive' , 'dead' : characterDetail?.status == 'Dead' }"></span> {{characterDetail?.status}} - {{characterDetail?.species}}</p>
+                    <div>
+                      <span class="title"> Last known Location:</span>
+                      <p class="text-white">{{characterDetail?.location.name}}</p>
+                    </div>
+                    <div>
+                      <span class="title">First Seen in:</span>
+                      <p class="text-white">{{characterDetail?.origin.name}}</p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+
+</div>

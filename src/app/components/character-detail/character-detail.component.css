@@ -1,0 +1,29 @@
+.details {
+    background :#272b33
+}
+
+.title {
+    color: #9e9e95;
+}
+.text-white {
+    color:#fff;
+}
+.alive {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: green;
+   
+}
+.dead {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: reds;
+   
+}
+
+
+
